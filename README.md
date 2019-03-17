@@ -1,4 +1,4 @@
-# rootctf19
+# rootctf19 by [CyberSecNITD](https://cybersecnitd.github.io)
 CTF challenges for rootctf19
 
 # How to contribute
