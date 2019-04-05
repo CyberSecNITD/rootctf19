@@ -1,0 +1,12 @@
+from random import randint
+
+flag = "{REDACTED}"
+
+secret = randint(1, 5000)
+a = input()
+
+if a == secret:
+    print flag
+else:
+    print "Try again Kiddo!"
+    exit(0)
