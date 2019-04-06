@@ -17,15 +17,15 @@ class LCG:
 
 def challenge():
 
-    _a = input()
-    _c = input()
-
     g = LCG(100)
 
     for _ in range(10):
-        print(g.next)
+        print(g.next())
     
-    if _a == g.a and _c == g.c:
+    _a = input()
+    _c = input()
+
+    if int(_a) == g.a and int(_c) == g.c:
         print(flag)
     else:
         print("Wrong values :/")
@@ -39,4 +39,5 @@ def test():
 
 
 if __name__ == "__main__":
-    test()
+    # test()
+    challenge()

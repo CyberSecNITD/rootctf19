@@ -1,8 +1,7 @@
 FROM alpine:latest
 
-RUN apk add --no-cache python3 socat
-ADD ques.py /opt/
-ADD secret.py /opt/
+RUN apk add --no-cache socat
+ADD masterCanaryOverwrite /opt/
 ADD init.sh /opt/
 
 WORKDIR /opt

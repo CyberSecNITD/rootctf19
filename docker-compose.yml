@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+    vulnerable_input:
+        build: ./vulnerable_input
+        restart: always
+        container_name: vulnerable_input
+        ports:
+            - 17077:2323
+
+    unsafe_pickle:
+        build: ./unsafe_pickle
+        restart: always
+        container_name: unsafe_pickle
+        ports:
+            - 17079:10007
+
+    lcg:
+        build: ./lcg
+        restart: always
+        container_name: lcg
+        ports:
+            - 17080:2323
+
+    meme_maker:
+        build: ./meme_maker
+        restart: always
+        container_name: meme_maker
+        ports:
+            - 17081:8082
+
+    oh_my_js:
+        build: ./oh_my_js
+        restart: always
+        container_name: oh_my_js
+        ports:
+            - 17082:8080
+
+    juggle_the_type:
+        build: ./juggle_the_type
+        restart: always
+        container_name: juggle_the_type
+        ports:
+            - 17083:8080
+
+    good_crypto_bad_coding:
+        build: ./good_crypto_bad_coding
+        restart: always
+        container_name: good_crypto_bad_coding
+        ports:
+            - 17084:8080
+
+    cbc:
+        build: ./cbc
+        restart: always
+        container_name: cbc
+        ports:
+            - 17085:2323

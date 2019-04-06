@@ -1,8 +1,7 @@
 FROM alpine:latest
 
-RUN apk add --no-cache python3 socat
+RUN apk add --no-cache python2 socat
 ADD ques.py /opt/
-ADD secret.py /opt/
 ADD init.sh /opt/
 
 WORKDIR /opt

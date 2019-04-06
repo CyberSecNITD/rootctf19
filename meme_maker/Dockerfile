@@ -1,7 +1,7 @@
-FROM python:3.7.3-alpine3.8
+FROM ubuntu:18.04
 
-RUN pip install bottle
-RUN apk add --no-cache imagemagick
+RUN apt-get update && apt-get install python3 python3-pip imagemagick -y
+RUN pip3 install bottle
 
 ADD . /opt/
 
