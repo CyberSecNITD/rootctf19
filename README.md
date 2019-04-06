@@ -1,13 +1,19 @@
 # rootctf19 by [CyberSecNITD](https://cybersecnitd.github.io)
 CTF challenges for rootctf19
 
-# How to contribute
+## Challenges
 
-1. Create a folder with the challenge name as its name. Eg. `pwn1`
-2. All your files necessary for the challenge lives in this directory `pwn1`, Eg. `pwn1/pwn1.exe`
-3. Add a `challenge.md` stating
-  - Name of the challenge
-  - Challenge hint
-  - Link to the file
-4. If you challenge needs hosting, i.e. A web challenge or pwn challenge. Write a `Dockerfile` so it can be automatically built and deployed. Note: The containers will be ephimeral as it should hvae been :smile:.
-5. Add `solution.md` which has the instructions to solve the challenge.
++ baby_rsa
++ cbc
++ good_crypto_bad_coding
++ juggle_the_type
++ lcg
++ meme_maker
++ oh_my_js
++ single_key_xor
++ take_a_bite
++ unreleased
++ unsafe_pickle
++ vulnerable_input
++ what_do_computers_talk
++ what_uncle_james_hiding

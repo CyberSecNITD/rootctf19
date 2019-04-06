@@ -9,10 +9,12 @@
             if($pass == md5($givenPass)){
 
                 $file_name = 'notes/' . $noteTitle ;
-
+                $file_name = str_replace('../','',$file_name) ;
+                echo $file_name ;
                 if(file_exists($file_name)){
                     #str_replace('../','','..././');
-                    $file_name = str_replace('../','',$file_name) ;
+                    
+                    
                     return file_get_contents($file_name) ;
                 }
                 else{
