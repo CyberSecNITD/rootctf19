@@ -6,28 +6,23 @@ Presenting meme maker, write your caption and it makes memes from you.
 
 The app developer accidentally commit a secret file along with the code. Can you read it?
 
-<detail>
-	<summary>Its RCE!</summary>
-		```python
-		@route("/writetext")
-		def writetext():
-			yourtext = "\";cat text"
-			command = """width=; \
-			convert -background '#0008' \
+<details>
+<summary>Hint</summary>
+
+	@route("/writetext")
+	def writetext():
+		yourtext = "\";cat text"
+		command = """width=; \
+		convert -background '#0008' \
 		   -fill white -gravity center \
 		   -size `identify -format %w {FILENAME}`x100 caption:"{CAPTION}" {FILENAME} \
 		   +swap -gravity north -composite \
-		   anno_caption.jpg""".format(FILENAME=IMG_FILE,
-							CAPTION=request.query["caption"])
-
-			try:
-				output = subprocess.check_output(command, shell=True)
-			except subprocess.CalledProcessError:
-				pass
-			return "<h3>Here is your meme</h3><img \
-				width=\"400px\" src='/anno'></img>"
-		```
-</detail>  
+		   anno_caption.jpg""".format(FILENAME=IMG_FILE,CAPTION=request.query["caption"])
+		try:
+			output = subprocess.check_output(command, shell=True)
+		except subprocess.CalledProcessError:
+			pass
+</details>  
 
 ## Solution 
 
