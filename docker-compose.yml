@@ -56,3 +56,23 @@ services:
         container_name: cbc
         ports:
             - 17085:2323
+    
+    jwt:
+        build: ./jwt
+        restart: always
+        container_name: jwt
+        ports:
+            - 17086:6763
+    inspect:
+        build: ./inspect
+        restart: always
+        container_name: inspect
+        ports:
+            - 17087:6523
+   notes_path_traversal:
+        build: ./notes_path_traversal
+        restart: always
+        container_name: notes_path_traversal
+        ports:
+            - 17089:80
+   
