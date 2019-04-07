@@ -51,10 +51,24 @@ command = """width=; \
 
 Notice `caption:"{CAPTION}"`, simple raw substitution of string into a shell command. It is executed as a shell command by subprocess's `check_output` function with `shell=True`.
 
-So with some *shell-fu*, one can use command substitution to run shell code inside a double quote shell string. Try ``ls -al``, you ll this as output:
+So with some *shell-fu*, one can use command substitution to run shell code inside a double quote shell string. Try `ls -al` enclosed in backtick(command substitution), you will get this as output:
 
 ![Try `ls -al` as caption](ls_anno_caption.jpg)
 
-Ah there is our `flag.txt` in the same directory as the server. Now send ``cat flag.txt`` as caption this time, Voila! Tom is seriously unsettled this time.
+Ah there is our `flag.txt` in the same directory as the server. Now send `cat flag.txt` enclosed in backtick as caption this time, Voila! Tom is seriously unsettled this time.
 
 ![Tom is unsettled now](flag_anno_caption.jpg)
+
+### Fix?
+
+If you run a linux machine, try these commands and compare the output
+
+```sh
+echo "`uname -a`"
+```
+vs
+```sh
+echo '`uname -a`'
+```
+
+Does second command still fix the whole RCE vulnerability? 
