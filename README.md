@@ -1,1 +1,18 @@
-# Challenges for root@ctf19 by [CyberSecNITD](https://cybersecnitd.github.io)
+# root@ctf19 by [CyberSecNITD](https://cybersecnitd.github.io)
+CTF challenges for rootctf19
+
+## Challenges
+
++ [baby_rsa](baby_rsa)
++ cbc
++ good_crypto_bad_coding
++ juggle_the_type
++ lcg
++ meme_maker
++ oh_my_js
++ single_key_xor
++ take_a_bite
++ unsafe_pickle
++ vulnerable_input
++ what_do_computers_talk
++ what_uncle_james_hiding
