@@ -55,9 +55,9 @@ x_n1 = (a * x_n + c) mod m
 From the program, both `a` and `c` are missing, and `m` is given as `2^32`. The program first prints 10 numbers generated from the LCG, which are
 
 ```
-2901179647
-3706863960
-4240103099
+2901179647 (x_0)
+3706863960 (x_1)
+4240103099 (x_2)
 1419655212
 3898826519
 2440632800
@@ -90,3 +90,5 @@ c = (x_1 - a * x_0) mod m
 ```
 
 Supply the multiplier `a` and increment `c` respectively, the program prints the flag.
+
+Refer to [solve.py](solve.py) for solving a LCG generator.
