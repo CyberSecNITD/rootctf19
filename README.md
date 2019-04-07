@@ -16,3 +16,13 @@ CTF challenges for rootctf19
 + [vulnerable_input](vulnerable_input)
 + [what_do_computers_talk](what_do_computers_talk)
 + [what_uncle_james_hiding](what_uncle_james_hiding)
+
+## Install
+
+Setup the hosted challenges by running
+
+```
+docker-compose up
+```
+
+You need to have `docker` installed in your system to setup the challenges.
