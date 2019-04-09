@@ -16,6 +16,9 @@ CTF challenges for rootctf19
 + [vulnerable_input](vulnerable_input)
 + [what_do_computers_talk](what_do_computers_talk)
 + [what_uncle_james_hiding](what_uncle_james_hiding)
++ [jwt](jwt)
++ [notes_path_traversal](notes_path_traversal)
++ [inspect](inspect)
 
 ## Install
 
