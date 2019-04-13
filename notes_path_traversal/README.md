@@ -29,6 +29,6 @@ echo $file_name ;
 
 ```
 
-Therefore to print the contents of the flag.txt which just lies outside the web server's root directory **..././..././flag.txt** 
+Therefore to bypass this filter the input should be **..././..././flag.txt** 
 
 ![](./Solution2.png)
